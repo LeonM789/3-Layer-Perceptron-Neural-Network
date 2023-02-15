@@ -1,7 +1,6 @@
 function [w1, w2] = backpropagation(trainingdata, trainingtarget, n, f1, w1, w2, w1x, z1, z2, pos)
     
-    % Berechnung der Differenz zwischen Ergebnis und Ziel und Anpassung der
-    % Gewichtsmatrizen
+    % calculating the error of the output
     OutError = z2 - trainingtarget(pos);
     deltaout = OutError;
     gradEW2 = deltaout .* transpose(z1);
@@ -16,4 +15,3 @@ function [w1, w2] = backpropagation(trainingdata, trainingtarget, n, f1, w1, w2,
     w2 = W2neu;
     
 end
-
