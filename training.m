@@ -6,29 +6,29 @@ function[w1, w2, trainingerror, trainingresult] = training(trainingdata, trainin
     tiledlayout(2,1)
 
     nexttile
-    title('Epochenfehler')
-    xlabel('Epoche')
-    ylabel('Epochenfehler')
+    title('Error of the epoch')
+    xlabel('Epoch')
+    ylabel('Error of the epoch')
     hold on
     
     nexttile
     plot(trainingtarget);
-    title('Modell mit Trainingsdaten')
+    title('Model with training data')
     hold on
     p2 = plot(trainingtarget);
-    legend('Ergebnis','Ziel', "Location", "southeast")
+    legend('Result','Target', "Location", "southeast")
 
     for ep = 1:epochs
 
         trainingresult = [];
 
-        % Anpassung der Matrizen für jeden Datenpunkt
+        % adjusting the matrix for each point
         for pos = 1:length(trainingtarget)          
             [z1, z2, w1x] = forward(trainingdata, f0, w1, w2, pos);
             [w1, w2] = backpropagation(trainingdata, trainingtarget, n, f1, w1, w2, w1x, z1, z2, pos);
         end
 
-        % Trainingsergebnis nach jeder Epoche
+        % result of the training after every epoch
         w1x = w1 * transpose(trainingdata(:, :));
         z1 = transpose(f0(w1x));
         w2x = w2 * transpose(z1);
@@ -36,9 +36,9 @@ function[w1, w2, trainingerror, trainingresult] = training(trainingdata, trainin
     
         [error] = errorcalc(trainingresult, trainingtarget);
         trainingerror = [trainingerror; error];
-        % Epochenfehler wird einer Liste hinzugefügt (für den Live-Plot)
+        % adding the error of every epoch to a list (for the live plot)
      
-        % Updaten der Plots
+        % updating the plot
         nexttile(1)
         plot(trainingerror)
 
@@ -47,7 +47,7 @@ function[w1, w2, trainingerror, trainingresult] = training(trainingdata, trainin
         p2.YData = trainingresult;
         drawnow limitrate
 
-        % Eta wird angepasst
+        % adjusting eta
         n = neweta(n,neurons, error); 
 
     end
