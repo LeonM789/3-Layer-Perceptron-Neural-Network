@@ -1,38 +1,38 @@
 function[] = plotting(trainingresult, testingresult, trainingtarget, testingtarget, trainingerror, testingerror, epochs)
     
     tiledlayout(3,1)
-    % Oberer Plot
+    % top plot
     nexttile
     plot(trainingerror)
-    title('Gesamtfehler der Epochen')
-    xlabel('Epoche')
-    ylabel('Gesamtfehler')
+    title('Total error of the epochs')
+    xlabel('Epochs')
+    ylabel('Total error')
     
-    % Mittlerer Plot
+    % middle plot
     nexttile
     plot(trainingresult)
     hold on
     plot(trainingtarget)
-    legend('Ergebnis','Ziel', "Location", "southeast")
-    title('Modell mit Trainingsdaten')
+    legend('Result','Target', "Location", "southeast")
+    title('Model with training data')
     
-    % Unterer Plot
+    % lower dlot
     nexttile
     plot(testingresult)
     hold on
     plot(testingtarget)
-    legend('Ergebnis','Ziel', "Location", "southeast")
-    title('Modell mit Testdaten')
+    legend('Result','Target', "Location", "southeast")
+    title('Model with testing data')
     
-    disp(" ") % Leerzeile
+    disp(" ") % just for a bit space in the output
     
-    % Textausgabe:
+    % text ouput:
     avgtrainingerror = trainingerror(length(trainingerror))/length(trainingtarget);
-    disp("Gesamtfehler des Trainings nach " + epochs + " Epochen: " + trainingerror(length(trainingerror)));
-    disp("∅ je Punkt: " + avgtrainingerror)
+    disp("Total error of the training after " + epochs + " epochs: " + trainingerror(length(trainingerror)));
+    disp("∅ per point: " + avgtrainingerror)
 
     avgtestingerror = testingerror(length(testingerror))/length(testingtarget);
-    disp("Gesamtfehler des Tests liegt bei: " + testingerror(length(testingerror)));
-    disp("∅ je Punkt: " + avgtestingerror)
+    disp("Total error of the test: " + testingerror(length(testingerror)));
+    disp("∅ per point: " + avgtestingerror)
 
 end
