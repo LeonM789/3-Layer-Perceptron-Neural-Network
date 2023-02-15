@@ -17,12 +17,10 @@
   <a href="#license">License</a>
 </p>
 
-https://user-images.githubusercontent.com/91656714/219135453-fe624734-3730-4b42-b0af-5d33063f714c.mov
-
 ## Key Features
 
 * Approximation of any number of n-dimensional points
-* Free choise of the:
+* Free choise of the
     - activation function
     - number of neurons
     - learning rate eta
@@ -47,8 +45,8 @@ You will now be asked to enter a few data:
 - testing data: just select the already existing testing data file or select your own
 - training data: same as above
 - activation function: can be any function you want (e.g. sin(x), 5*x^2, ...)
-- neurons: determines how many weights there will be (e.g. 20, 50, 100, ...)
-- learning rate: for good results I would suggenst anything < 0.1
+- neurons: affects how many weights there will be (e.g. 20, 50, 100, ...)
+- learning rate: for good results I would suggest anything < 0.1
 - epochs: how often you want the training to be done - a few hundred should give good results
 
 ## You may also like...
