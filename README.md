@@ -16,6 +16,8 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
+#
+<br>
 
 ## Key Features
 
@@ -31,6 +33,7 @@
 * Plots to see the end result
 * Output of the exact errors
 
+<br>
 
 ## How To Use
 
@@ -49,10 +52,13 @@ You will now be asked to enter a few data:
 - learning rate: for good results I would suggest anything < 0.1
 - epochs: how often you want the training to be done - a few hundred should give good results
 
+<br>
+
 ## You may also like...
 
 - [FlappyBird AI](https://github.com/LeonM789/FlappyBirdAI.git) - A neural network in Python
 
+<br>
 
 ## License
 
