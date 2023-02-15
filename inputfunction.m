@@ -2,33 +2,32 @@ function [trainingdata, trainingtarget, f0, f1, neurons, n, epochs, testingdata,
 
     syms x
 
-    disp("Bitte Testdaten wählen");
+    disp("Please enter testing data");
     testingdataframe = readmatrix(uigetfile("*.csv")); 
 
-    disp("Bitte Trainingsdaten wählen");
+    disp("Please enter training data");
     trainingdataframe = readmatrix(uigetfile("*.csv"));
     
-    % Trainingsdaten
+    % training data
     trainingdata = trainingdataframe(:, 1:length(trainingdataframe(1,:))-1);
-    % Zielwerte der Trainingsdaten
+    % target values of training data
     trainingtarget = trainingdataframe(:, length(trainingdataframe(1,:)));
     
-    % Testdaten
+    % testing data
     testingdata = testingdataframe(:, 1:length(testingdataframe(1,:))-1);
-    % Zielwerte der Testdaten
+    % target values of the testing data
     testingtarget = testingdataframe(:, length(testingdataframe(1,:)));
 
-    f = input("Bitte Aktivierungsfunktion angeben: ");
+    f = input("Please enter the activation function: ");
     f1 = matlabFunction(diff(f));
     f0 = matlabFunction(f);
 
-    % "Anzahl" der Gewichte
-    neurons = input("Bitte Anzahl an Neuronen angeben: ");
+    neurons = input("Please enter the number of neurons: ");
     
     % Eta
-    n = input("Bitte Lernrate angeben: ");
+    n = input("Please enter the learning rate: ");
     
-    epochs = input("Bitte Epochenanzahl angeben: ");
+    epochs = input("Please enter the number of epochs: ");
   
 end
 
