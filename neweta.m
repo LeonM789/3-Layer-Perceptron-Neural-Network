@@ -1,6 +1,8 @@
 function [n] = neweta(n,neurons, error)
-% Notfallmechanismus, für zu hohe Lernrate und mögliche daraus resultierede
-% explodierende Fehler
+
+% emergency function to avoid enormous errors caused by a wrong eta choice
+% (maybe a bit primitive, but does what it's supposed to)
+
 if error > 40
     n = 0.01;
 elseif error >12 && neurons < 10
