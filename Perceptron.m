@@ -2,17 +2,17 @@ clear all
 close all
 syms x
 
-% Inputfunktion besorgt alle erforderlichen Daten
+% input function collecting all needed information
 [trainingdata, trainingtarget, f0, f1, neurons, n, epochs, testingdata, testingtarget] = inputfunction();
 
-% Erstellung zufälliger Gewichtsmatrizen
+% generating random weight matrices
 [w1, w2] = randommatrix(trainingdata, neurons);
 
-% Matrizen werden durch die Trainingsdaten und den entstehenen Error angepasst
-[w1, w2, trainingerror, trainingresult] = training(trainingdata, trainingtarget, f0, f1, w1, w2, n , epochs,neurons);
+% matrices are adjusted by the training data and the resulting error
+[w1, w2, trainingerror, trainingresult] = training(trainingdata, trainingtarget, f0, f1, w1, w2, n , epochs, neurons);
 
-% Trainierte Matrizen werden an Testdaten angewendet
+% testing the trained matrices on the testing data
 [testingresult, testingerror] = testing(testingtarget, testingdata, f0, w1, w2);
 
-% Graphische Darstellung
+% plotting the results
 plotting(trainingresult, testingresult, trainingtarget, testingtarget, trainingerror, testingerror, epochs);
