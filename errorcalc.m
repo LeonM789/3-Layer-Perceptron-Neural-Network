@@ -1,6 +1,7 @@
 function [error] = errorcalc(result, target)
   
-    % Fehlerfunktion: 1/2*(output-target)^2
+    % error function: 1/2*(output-target)^2
+    % (vectorized inputs)
     
     error = sum(((result - transpose(target)).^2)./2);
     
