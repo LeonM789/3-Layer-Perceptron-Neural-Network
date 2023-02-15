@@ -16,7 +16,9 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
-#
+
+#  
+
 <br>
 
 ## Key Features
@@ -63,6 +65,8 @@ You will now be asked to enter a few data:
 ## License
 
 MIT
+
+<br>
 
 ---
 
