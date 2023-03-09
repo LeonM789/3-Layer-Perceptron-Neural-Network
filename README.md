@@ -35,7 +35,7 @@ The code in this repository is written in Matlab, and requires the following too
 <br>
 
 ## Usage
-To train and test the 3-layer perceptron, simply run the Perceptron.m script and then choose the following hyperparameters:
+To train and test the 3-layer perceptron, simply run the `Perceptron.m` script and then choose the following hyperparameters:
 
 ```matlab
 testing data: just select the already existing testing data file or select your own
