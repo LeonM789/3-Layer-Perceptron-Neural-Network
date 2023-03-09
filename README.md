@@ -20,8 +20,9 @@
   <a href="#license">License</a>
 </p>
 
-
 <br>
+<br>
+
 ## Introduction
 This repository contains Matlab code, test data, and input data for a 3-layer perceptron, a type of artificial neural network that consists of an input layer, a hidden layer, and an output layer. The network is trained using the backpropagation algorithm to approximate linear and non linear relationships of the input data. It also shows the progress in a live plot during the calculations.
 
@@ -52,7 +53,7 @@ This will train and test the network on the specified datasets, with the specifi
 <br>
 
 ## Example Datasets
-The repository includes 2 example datasets. The dataset for training `TrainData.csv` consists of 45 training examples and the testing data `TestData.csv 13 validation examples, each with 3 input features and a single output label. The goal of the network is to predict the output label based on the input features.
+The repository includes 2 example datasets. The dataset for training `TrainData.csv` consists of 45 training examples and the testing data `TestData.csv` 13 validation examples, each with 3 input features and a single output label. The goal of the network is to predict the output label based on the input features.
 
 <br>
 
