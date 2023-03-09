@@ -37,8 +37,7 @@ The code in this repository is written in Matlab, and requires the following too
 
 ## Usage
 To train and test the 3-layer perceptron, simply run the Perceptron.m script and then choose the following hyperparameters:
-<br>
-Example:
+
 ```matlab
 testing data: just select the already existing testing data file or select your own
 training data: same as above
@@ -47,8 +46,7 @@ neurons: 90
 learning rate: 0.05 (should be smaller than 0.1)
 epochs: 1000
 ```
-<br>
-This will train and test the network on the specified datasets, with the specified number of neurons, learning rate, number of epochs, and activation function. You will see the progress of the error and the results in a live plot during the calculations. At the end you get 3 plots as an overview and the results in the terminal.
+This will train and test the network on the specified datasets, with the specified number of neurons, learning rate, number of epochs, and activation function. You will see the progress of the error and the results in a live plot during the calculations. At the end you get 3 plots as an overview and the results in the terminal.  
 
 <br>
 
