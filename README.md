@@ -14,7 +14,7 @@
   <a href="#introduction">Introduction</a> •
   <a href="#Requirements">Requirements</a> •
   <a href="#Usage">Usage</a> •
-  <a href="#Example">Example Datasets</a> •
+  <a href="#Example-datasets">Example Datasets</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
