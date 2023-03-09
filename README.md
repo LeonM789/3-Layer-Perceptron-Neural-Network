@@ -12,7 +12,6 @@
 
 <p align="center">
   <a href="#introduction">Introduction</a> •
-  <a href="#key-features">Key Features</a> •
   <a href="#Requirements">Requirements</a> •
   <a href="#Usage">Usage</a> •
   <a href="#Example">Example Datasets</a> •
