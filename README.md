@@ -22,19 +22,19 @@
 <br>
 <br>
 
-## Introduction
+## 📝 Introduction
 This repository contains Matlab code, test data, and input data for a 3-layer perceptron, a type of artificial neural network that consists of an input layer, a hidden layer, and an output layer. The network is trained using the backpropagation algorithm to approximate linear and non linear relationships of the input data. It also shows the progress in a live plot during the calculations.
 
 <br>
 
-## Requirements
+## 🛠️ Requirements
 The code in this repository is written in Matlab, and requires the following toolboxes:
 
   - Symbolic Math Toolbox
 
 <br>
 
-## Usage
+## 💡 Usage
 To train and test the 3-layer perceptron, simply run the `Perceptron.m` script and then choose the following hyperparameters:
 
 ```matlab
@@ -49,18 +49,18 @@ This will train and test the network on the specified datasets, with the specifi
 
 <br>
 
-## Example Datasets
+## 🗂️ Example Datasets
 The repository includes 2 example datasets. The dataset for training `TrainData.csv` consists of 45 training examples and the testing data `TestData.csv` 13 validation examples, each with 3 input features and a single output label. The goal of the network is to predict the output label based on the input features.
 
 <br>
 
-## You may also like...
+## 🧡 You may also like...
 
 - [FlappyBird AI](https://github.com/LeonM789/FlappyBirdAI.git) - A neural network in Python
 
 <br>
 
-## License
+## ⚖️ License
 
 This code is released under the MIT License.
 
