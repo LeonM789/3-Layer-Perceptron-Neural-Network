@@ -62,7 +62,7 @@ The repository includes 2 example datasets. The dataset for training `TrainData.
 
 ## ⚖️ License
 
-This code is released under the MIT License.
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 <br>
 
