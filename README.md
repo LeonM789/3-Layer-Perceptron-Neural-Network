@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://leonmarx.de"><img src="https://leonmarx.de/wp-content/uploads/2022/10/69519963-1D46-425F-81EA-E60863D7BD47_1_201_a.jpeg" alt="Markdownify" width="200"></a>
+  <a href="https://leonmarx.de"><img src="https://leonmarx.de/other_pictures/glithub_logo.jpeg" alt="Markdownify" width="200"></a>
   <br>
   3 Layer Perceptron
   <br>
@@ -9,7 +9,7 @@
 
 <h4 align="center"><b><u>A simple version of a <a href="https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590" target="_blank">neural network</b></u></a>.</h4>
 
-
+<!---
 <p align="center">
   <a href="#introduction">Introduction</a> •
   <a href="#Requirements">Requirements</a> •
@@ -18,8 +18,8 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
+--->
 
-<br>
 <br>
 
 ## 📝 Introduction
