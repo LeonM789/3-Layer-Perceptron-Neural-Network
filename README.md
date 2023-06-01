@@ -53,13 +53,13 @@ This will train and test the network on the specified datasets, with the specifi
 The repository includes 2 example datasets. The dataset for training `TrainData.csv` consists of 45 training examples and the testing data `TestData.csv` 13 validation examples, each with 3 input features and a single output label. The goal of the network is to predict the output label based on the input features.
 
 <br>
-
+<!---
 ## 🧡 You may also like...
 
 - [FlappyBird AI](https://github.com/LeonM789/FlappyBirdAI.git) - A neural network in Python
 
 <br>
-
+--->
 ## ⚖️ License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
